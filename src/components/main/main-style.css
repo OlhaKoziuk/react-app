@@ -1,0 +1,400 @@
+/* Section main info */
+.main-info {
+    width: 60%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+
+}
+
+.main-info img {
+    width: 60%;
+    height: 75%;
+    margin: 0 auto;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(112, 91, 94, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(112, 91, 94, 1);
+    box-shadow: 10px 10px 5px 0px rgba(112, 91, 94, 1);
+
+}
+
+.main-info__wrapper {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main-info__wrapper h1 {
+    font-family: "Gilroy-Bold";
+    text-transform: uppercase;
+    width: 30%;
+    font-size: 2.5em;
+    line-height: 1.25;
+}
+
+.main-info__wrapper p {
+    width: 30%;
+    margin-right: 60px;
+
+}
+
+.main-info__wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(270deg);
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    line-height: 1.25;
+    width: 70px;
+}
+
+/* About me */
+.about-me {
+    width: 100%;
+    height: 450px;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.about-me__wrapper {
+    width: 34%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.diplomas {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+} 
+.carousel-wrapper {
+    width: 60%;
+    height: 80%;
+}
+
+.diplomas__wrapper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carusel {
+    width: 50%;
+    height: 90%;
+    overflow-x: hidden;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(112, 91, 94, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(112, 91, 94, 1);
+    box-shadow: 10px 10px 5px 0px rgba(112, 91, 94, 1);
+}
+
+.carusel-vertical {
+    width: 20%;
+    height: 90%;
+}
+
+.carusel__slide {
+    width: 3000px;
+    height: 100%;
+    display: flex;
+
+}
+
+.carusel__slide img {
+    width: 650px;
+    height: 100%;
+
+} 
+
+
+
+
+
+
+/* Slills */
+.skills {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.skills-list {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-list ul {
+    display: flex;
+}
+
+.skills-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Gilroy-bold", sans-serif;
+    color: #828282;
+    ;
+}
+
+.skills-list__item>img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Portfolio */
+.portfolio {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F6F6;
+}
+
+.portfolio img {
+    width: 50%;
+    height: 70%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(112, 91, 94, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(112, 91, 94, 1);
+    box-shadow: 10px 10px 5px 0px rgba(112, 91, 94, 1);
+}
+
+.portfolio a {
+    border-bottom: 2px solid #000;
+    font-size: 1.5em;
+    font-family: "Gilroy-bold", sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-info {
+        width: 70%;
+        padding-bottom: 0;
+        justify-content: space-around;
+    }
+
+    .portfolio img {
+        width: 60%;
+    }
+
+     .diplomas ul {
+        width: 90%;
+    } 
+
+     .carusel {
+        width: 55%;
+
+    } 
+}
+
+@media screen and (max-width: 1000px) {
+    .main-info {
+        height: 600px;
+    }
+
+    .main-info img {
+        width: 60%;
+        height: 70%;
+    }
+
+    .about-me__wrapper {
+        width: 60%;
+    }
+
+     .diplomas {
+        height: 500px;
+    }
+
+    .diplomas ul {
+        height: 80%;
+    } 
+
+    .diplomas li {
+        width: 33%;
+    } 
+
+    .portfolio img {
+        width: 75%;
+    }
+
+  
+}
+
+@media screen and (max-width: 800px) {
+    .main-info {
+        width: 90%;
+    }
+
+    .main-info__wrapper p {
+        width: 40%;
+        margin-right: 0;
+    }
+
+    .diplomas {
+        height: 400px;
+    } 
+
+    .skills {
+        height: 250px;
+    }
+
+    .portfolio {
+        height: 500px;
+    }
+
+  
+}
+
+@media screen and (max-width: 700px) {
+    .carusel {
+        width: 60%;
+    } 
+}
+
+@media screen and (max-width: 600px) {
+    .main-info {
+        height: 500px;
+    }
+
+    .main-info img {
+        width: 70%;
+        height: 75%;
+    }
+
+    .main-info__wrapper h1 {
+        font-size: 1.5em;
+    }
+
+    .skills {
+        height: 200px;
+    }
+
+    .skills-list {
+        width: 90%;
+    }
+
+    .skills-list__item>img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skills-list__item ul img {
+        width: 13px;
+        height: 13px;
+    }
+
+    .skills-list__item h3 {
+        font-size: 0.8em;
+    }
+
+    .carusel {
+        width: 70%;
+    } 
+
+}
+
+@media screen and (max-width: 500px) {
+    .main-info {
+        height: 450px;
+    }
+
+    .main-info__wrapper {
+        height: 25%;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-info__wrapper h1,
+    .main-info__wrapper p {
+        width: 80%;
+    }
+
+    .main-info__wrapper ul {
+        transform: rotate(0);
+        padding: 0;
+    }
+
+    .main-info img {
+        width: 70%;
+        height: 68%;
+    }
+
+    .about-me {
+        height: 400px;
+    }
+
+    .about-me__wrapper {
+        width: 80%;
+        height: 80%;
+    }
+
+    .portfolio img {
+        width: 90%;
+    }
+
+    .portfolio {
+        height: 400px;
+    }
+
+
+    .carusel {
+        width: 80%;
+    } 
+
+}
+
+@media screen and (max-width: 400px) {
+    .main-info {
+        height: 400px;
+    }
+
+    .main-info img {
+        width: 70%;
+        height: 65%;
+    }
+
+     .carusel {
+        width: 90%;
+        height: 88%;
+    } 
+
+}
+
+.prometheus {
+    width: 300px;
+    height: px;
+} 
